@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module ALU_TOP(
+module tt_um_alu(
                input logic clk,
                input logic btnC, btnU,
                input logic [15:0] sw,
