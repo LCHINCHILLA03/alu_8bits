@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= systemverilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = ALU.sv tt_um_alu.sv Carry_Look_Ahead_Aderr.sv MUX2X1.sv MUX6X1.sv Registros.sv Registro_Salida.sv Shift_Left.sv Shift_Right.sv Zero.sv clck_psc.sv display_driver.sv flag_display.sv full_adder.sv hext_to_7seg.sv
+PROJECT_SOURCES = ALU.sv tt_um_alu.sv Carry_Look_Ahead_Adder.sv MUX2X1.sv MUX6X1.sv Registros.sv Registro_Salida.sv Shift_Left.sv Shift_Right.sv Zero.sv clck_psc.sv display_driver.sv flag_display.sv full_adder.sv hext_to_7seg.sv
 
 ifneq ($(GATES),yes)
 
