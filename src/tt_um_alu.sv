@@ -15,9 +15,9 @@ module tt_um_alu(
     clck_psc clck_psc(.clk(clk), .clk_scaled(clk_1));
     logic [7:0]a;
     logic [7:0]b;
-    logic [7:0] Y, ANDD, ORR;
+    logic [7:0] ANDD, ORR;
     logic carry, cero, overflow;
     Registros bits_entrada(.clk(clk_1), .rst(rst_n), .btn_load(ena), .sw1({uio_in[0],ui_in[7:0]}), .reg_a(a), .reg_b(b));
-    ALU ALU(.A(a), .B(b), .Shift(uio_in[4:1]), .S(uio_in[7:5]), .Y(uo_out[7:0]), .ANDD(ANDD), .ORR(ORR), .Cero(cero), .Carry(carry), .Overflow(overflow));
+  ALU ALU(.A(a), .B(b), .Shift(uio_in[4:1]), .S(uio_in[7:5]), .Y(uo_out[7:0]), .ANDD(uio_oe[7:0]), .ORR(uio_oe[7:0]), .Cero(cero), .Carry(carry), .Overflow(overflow));
   flag_display flag(.clk(clk), .rst(rst_n), .zero(cero), .carry(carry), .overflow(overflow),.an(uio_oe[3:0]), .seg(uio_out[6:0]));
 endmodule
