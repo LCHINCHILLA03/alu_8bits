@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps
 
 module tt_um_alu(
-               input clk;
-               input rst_n;
-               input ena;
-               input [7:0] ui_in;
-               input [7:0] uio_in;
-               output [7:0] uo_out;
-               output [7:0] uio_out;
-               output [7:0] uio_oe;
+               input clk,
+               input rst_n,
+               input ena,
+               input [7:0] ui_in,
+               input [7:0] uio_in,
+               output [7:0] uo_out,
+               output [7:0] uio_out,
+               output [7:0] uio_oe
                );
                
     logic clk_1;
