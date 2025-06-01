@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 module MUX2X1(
               input logic [7:0]d0, d1,
