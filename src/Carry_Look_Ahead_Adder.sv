@@ -5,7 +5,6 @@ module carry_lookahead_adder
   (
    input [bits-1:0] i_add1,
    input [bits-1:0] i_add2,
-   input [bits-1:0] i_out, 
    input carry,
    output [bits-1:0]  o_result,
    output cout
@@ -25,7 +24,7 @@ module carry_lookahead_adder
               .b(i_add2[ii]),
               .cin(w_C[ii]),
               .s(w_SUM[ii]),
-              .cout(i_out[ii])
+              .cout(0)
               );
       end
   endgenerate
