@@ -11,7 +11,7 @@ module carry_lookahead_adder
    );
      
   wire [bits:0]     w_C;
-  wire [bits-1:0]   w_G, w_P, w_SUM;
+  wire [bits-1:0]   w_G, w_P, w_SUM, dummy_cout;;
  
   // Create the Full Adders
   genvar ii;
@@ -24,7 +24,7 @@ module carry_lookahead_adder
               .b(i_add2[ii]),
               .cin(w_C[ii]),
               .s(w_SUM[ii]),
-              .cout(0)
+              .cout(dummy_cout[ii])
               );
       end
   endgenerate
