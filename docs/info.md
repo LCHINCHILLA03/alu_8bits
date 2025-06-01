@@ -9,12 +9,14 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Elaboracion de una alu de 8 bits con 16 dip swtiches 8 led y un display de 7 segmentos
 
 ## How to test
 
-Explain how to use your project
+configurar 8 dipswitches para seleccionar 8 bits y un 9 dipswitch para seleccionar si es em a o b.
+3 dipswitches para seleccionar suma, resta, and, or. 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Uso de display de 7 segmentos para mostrar carry, overflow o cero.
+Uso de 8 leds para mostrar el resultado de la suma, resta ,and y or.
