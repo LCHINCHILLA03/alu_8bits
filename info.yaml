@@ -19,7 +19,7 @@ project:
   source_files:
     - "ALU.sv"
     - "tt_um_alu.sv"
-    - "Carry_Look_Ahead_Aderr.sv"
+    - "Carry_Look_Ahead_Adder.sv"
     - "MUX2X1.sv"
     - "MUX6X1.sv"
     - "Registros.sv"
