@@ -7,6 +7,6 @@ module clck_psc(
                 );
                 logic [31:0] myreg;
                 always @(posedge clk)
-                    myreg += 1;
+                    myreg <= myreg + 1;
                     assign clk_scaled = myreg[26];
 endmodule
