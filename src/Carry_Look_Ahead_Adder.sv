@@ -44,7 +44,7 @@ module carry_lookahead_adder
    
   assign w_C[0] = carry; // no carry input on first adder
  
-  assign o_result = {w_C[bits], w_SUM};   // Verilog Concatenation
+  assign o_result = w_SUM;   // Verilog Concatenation
   assign cout = w_C[bits];
  
 endmodule
