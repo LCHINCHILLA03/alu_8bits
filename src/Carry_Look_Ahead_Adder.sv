@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 module carry_lookahead_adder
   #(parameter bits = 8)
