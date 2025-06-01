@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 module hex_to_7seg (
     input  logic [3:0] hex,
